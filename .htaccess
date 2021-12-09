@@ -1,10 +1,8 @@
-# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:shubavelai.com
-RewriteEngine on
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} (www\.)?shubavelai.com
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:shubavelai.com
 
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+    
+RewriteCond %{HTTP_HOST} ^inventory.tripledtechnology\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://inventory.tripledtechnology.com/$1 [R,L]
