@@ -1,0 +1,131 @@
+:root {
+  --primary: #7ecc12;
+  --primary2: #569006;
+  --primary3: #a7f53b;
+  --primary-text: #64a509;
+
+  --success: #4e7e0b;
+  --success-light: #6aa80c;
+  --success-text: #3a5e06;
+  --success-text-dark: #294305;
+  --success-dark: #294305;
+  --success-disable: #bdd599;
+
+  /*danger */
+  --danger: #dc3545;
+  --danger-text: #dc3545;
+  --danger-text-dark: #7a0915;
+  --danger-light: #e3acac;
+  --danger-dark: #b20b1b;
+
+  /*info */
+  --info: #0d6efd;
+  --info-text: #1373da;
+  --info-text-dark: #08417e;
+  --info-light: #c3d6ea;
+  --info-dark: #08417e;
+
+  /* warning */
+  --warning: #e2dd39;
+  --warning-text: #e2df17;
+  --warning-text-dark: #817d06;
+  --warning-light: #eae9c3;
+  --warning-dark: #b20b1b;
+}
+
+.success {
+  background: var(--success-disable);
+  color: var(--success-text-dark);
+}
+
+.text-success {
+  color: var(--success-text-dark) !important;
+  font-weight: 550;
+}
+
+.text-danger {
+  color: var(--danger-text-dark) !important;
+  font-weight: 550;
+}
+
+.text-info {
+  color: var(--info-text-dark) !important;
+  font-weight: 550;
+}
+
+.text-warning {
+  color: var(--warning-text-dark) !important;
+  font-weight: 550;
+}
+
+
+.btn {
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: none;
+    display: flex;
+    font-size: 14px;
+    padding: 5px 10px !important;
+  
+    .fa-caret-down {
+      position: relative;
+      left: 4px;
+      top: 4px;
+    }
+  }
+  
+  .btn-sm {
+    padding: 4px 14px !important;
+  
+    i {
+      position: relative;
+      left: 6px;
+      top: 1px;
+      color: inherit;
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-image: linear-gradient(#0000003d 0 0);
+    box-shadow: none !important;
+  }
+  
+  .btn.filled-success,
+  .btn.outline-success:hover,
+  .btn.outline-success:focus {
+    background-color: var(--success);
+    color: #fff;
+  }
+  
+  .btn.filled-info,
+  .btn.outline-info:hover,
+  .btn.outline-info:focus {
+    background-color: var(--info-dark);
+    color: #fff;
+  }
+  
+  .btn.filled-danger,
+  .btn.outline-danger:focus,
+  .btn.outline-danger:hover {
+    background-color: var(--danger);
+    color: #fff;
+  }
+  
+  .btn.outline-success {
+    border: 1px solid var(--success);
+    color: var(--success);
+  }
+  
+  .btn.outline-info {
+    border: 1px solid var(--info-dark);
+    color: var(--info-dark);
+  }
+  
+  .btn.outline-danger {
+    border: 1px solid var(--danger);
+    color: var(--danger);
+  }
